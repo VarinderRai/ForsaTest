@@ -1,0 +1,13 @@
+
+ <h1> Registartion </h1>
+ <form #studentRegistration="ngForm" (ngSubmit)="AddtoArray(studentRegistration.value)">
+   First Name :
+   <input type="text" name="firstName" placeholder="First Name" ngModel>
+   <br>
+   Last Name:
+   <input type="text" name="lastName" placeholder="Last Name" ngModel>
+   <br>
+   <input type="submit" value="submit"/>
+   <a routerLink="student-list">Student List</a>
+ </form>
+
